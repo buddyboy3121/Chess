@@ -1,10 +1,35 @@
 public class Piece{
 
-  public Piece(){
-  
-  
-  
+ private Tile location;
+  public Piece(Tile location){
+    this.location = location;
+  }
+  public Tile getTile(){
+    return locatio;
   
   }
+  
+  public Tile[] getMoves(){
+  //All available moves
+  //E.g. pawn is either one or two ahead
+  }
+  
+  public Tile[] getCaptureTiles(){
+  //All capture moves
+  //Usually the same as getMoves(), but pawns can take diagonally.
+  }
+  
+  public boolean canMove(Tile t){
+    return Arrays.asList(getMoves()).contains(t);
+  }
+  
+  public void move(Tile t){
+    location = t;
+  }
+  
+  public boolean canTake(Piece p){
+    return Arrays.asList(getCaptureTiles()).contains(p.getTile());
+  }
+  
 
 }
