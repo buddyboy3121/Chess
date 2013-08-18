@@ -1,10 +1,11 @@
-
 public class Tile {
-
   public Tile(){
   
   
   }
-
-
+  
+  public Piece pieceAt(){
+  //Gets piece at this Tile or null
+  
+  }
 }
