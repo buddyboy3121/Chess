@@ -5,7 +5,7 @@ public class Piece{
     this.location = location;
   }
   public Tile getTile(){
-    return locatio;
+    return location;
   
   }
   
